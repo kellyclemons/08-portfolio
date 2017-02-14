@@ -1,18 +1,25 @@
 // @import 'yoga';
 // @import 'normalize';
-
+//
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
 
+$c-primary: #0047ff;
+$c-white: #fff;
+$c-red: #ff1900;
+$c-green: #00a42e;
+$c-greylink: #888;
+$c-black: #000;
+$c-pink: #ff00fb;
+
+// PORTFOLIO COLOURS
+//
+$c-bluegreen: #1a7461;
+
 body {
   margin: 0;
-  font-family: 'Amatic SC', cursive;
-}
-
-img {
-  align-self: center;
-  max-width: 100%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 ul {
@@ -20,5 +27,108 @@ ul {
   list-style: none;
 }
 
-// STYLING STARTS HERE
+img {
+  align-self: center;
+  max-width: 100%;
+}
+
+// TOP SECTION;
+
+
+// TOP NAVBAR
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  background: $c-greylink;
+  color: $c-white;
+  font-size: 0.5rem;
+  // flex-direction: column;
+  // justify-content: space-around;
+
+  > * {
+    margin: 0.5rem;
+    // background: $c-green;
+  }
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  display: inline;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+}
+
+.navbar-right-item {
+  margin: 0.5rem;
+  // display: inline-block;
+}
+
+.search-icon {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0.5rem;
+
+}
+
+
+// MAIN HEADING - STUDENT AT THE IRON YARD
 //
+
+@keyframes displace {
+  from {
+    background-position: -20px center;
+  }
+  to {
+    background-position: 100px center;
+  }
+}
+
+.main-heading {
+  align-content: space-around;
+  margin: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  // border: 5px black solid;
+
+  background: url('http://i68.tinypic.com/snfafd.jpg') repeat-x left center;
+  background-size: contain;
+  -webkit-animation: displace 5s linear infinite;
+  animation: displace 5s linear infinite;
+
+  text-align: center;
+  // animation-name: example;
+  // animation-duration: 10s;
+}
+
+.main-heading-big {
+  margin: 0;
+  padding: 1rem;
+  color: $c-white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  // background: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-heading-small {
+  margin: 0;
+  color: $c-white;
+  font-size: 0.5rem;
+}
+
+// MIDDLE SECTION
+
+// FOOTER ;
