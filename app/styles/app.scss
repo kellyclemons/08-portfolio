@@ -4,131 +4,103 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
-
-$c-primary: #0047ff;
-$c-white: #fff;
-$c-red: #ff1900;
-$c-green: #00a42e;
-$c-greylink: #888;
-$c-black: #000;
-$c-pink: #ff00fb;
-
-// PORTFOLIO COLOURS
-//
-$c-bluegreen: #1a7461;
-
-body {
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-ul {
-  padding-left: 0;
-  list-style: none;
-}
-
-img {
-  align-self: center;
-  max-width: 100%;
-}
+@import 'css-resets';
+@import 'double-container';
+@import 'top-nav';
 
 // TOP SECTION;
 
 
 // TOP NAVBAR
 
-.navbar {
+// .navbar {
+//   display: flex;
+//   // justify-content: space-between;
+//   background: $c-greylink;
+//   color: $c-white;
+//   font-size: 0.5rem;
+//   // flex-direction: column;
+//   // justify-content: space-around;
+//
+//   > * {
+//     margin: 0.5rem;
+//     // background: $c-green;
+//   }
+// }
+//
+// .navbar-left {
+//   display: flex;
+//   align-items: center;
+// }
+//
+// .navbar-title {
+//   display: inline;
+// }
+//
+// .navbar-right {
+//   display: flex;
+//   align-items: center;
+//   padding-left: 10rem;
+// }
+//
+// .navbar-right-item {
+//   margin: 0.5rem;
+//   // display: inline-block;
+// }
+//
+// .search-icon {
+//   display: inline-block;
+//   width: 0.5rem;
+//   height: 0.5rem;
+//   margin: 0.5rem;
+//
+// }
+
+// <-- FOOTER -->
+//
+
+.footer {
+
   display: flex;
-  justify-content: space-between;
-  margin: 2rem;
-  background: $c-greylink;
+  flex-direction: row;
+  justify-content: space-around;
+  background: blue;
   color: $c-white;
-  font-size: 0.5rem;
-  // flex-direction: column;
-  // justify-content: space-around;
+  font-size: 0.8rem;
 
   > * {
     margin: 0.5rem;
-    // background: $c-green;
   }
 }
 
-.navbar-left {
+.tiy-logo {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+
+.footer-item {
+  padding: 0.5rem;
+  color: $c-white;
+  text-decoration: none;
+}
+
+.footer-left {
   display: flex;
   align-items: center;
+  // transform: translateX(-5rem);
 }
 
-.navbar-title {
-  display: inline;
-}
 
-.navbar-right {
+.footer-right {
   display: flex;
   align-items: center;
-  padding-left: 10rem;
-}
-
-.navbar-right-item {
-  margin: 0.5rem;
-  // display: inline-block;
-}
-
-.search-icon {
-  display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
-  margin: 0.5rem;
-
-}
 
 
-// MAIN HEADING - STUDENT AT THE IRON YARD
-//
-
-@keyframes displace {
-  from {
-    background-position: -20px center;
-  }
-  to {
-    background-position: 100px center;
-  }
-}
-
-.main-heading {
-  align-content: space-around;
-  margin: 3rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-
-  // border: 5px black solid;
-
-  background: url('http://i68.tinypic.com/snfafd.jpg') repeat-x left center;
-  background-size: contain;
-  -webkit-animation: displace 5s linear infinite;
-  animation: displace 5s linear infinite;
-
+  font-size: 0.6rem;
   text-align: center;
-  // animation-name: example;
-  // animation-duration: 10s;
+
+  > * + * {
+    border-left: 1px solid $c-lightgrey;
+  }
 }
-
-.main-heading-big {
-  margin: 0;
-  padding: 1rem;
-  color: $c-white;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 3rem;
-  // background: blue;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.main-heading-small {
-  margin: 0;
-  color: $c-white;
-  font-size: 0.5rem;
-}
-
-// MIDDLE SECTION
-
-// FOOTER ;
