@@ -1,17 +1,24 @@
 // *** TOP SECTION ***
 
 // TOP NAVBAR;
+//
+
+.folio-logo {
+  width: 20rem;
+}
 
 .top {
-  background: url('https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/16583841_1454244444585861_996615803480571904_n.jpg') no-repeat center center fixed;
+  background: url('/images/waves.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+
 .navbar {
-    font-family: 'Bungee Inline', cursive;
+  font-family: 'Reenie Beanie', cursive;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1rem;
+  color: $c-white;
+  font-size: 2rem;
 
   > * {
     margin: 0.5rem;
@@ -27,6 +34,7 @@
   width: 3rem;
   height: 3rem;
   margin: 0.5rem;
+  filter: invert(100%);
 }
 
 .navbar-title {
@@ -39,36 +47,34 @@
 }
 
 .navbar-right-item {
-  color: $c-black;
+  color: $c-white;
   margin: 0.5rem;
   text-decoration: none;
 }
-
 
 // *** HERO BANNER ***
 
 .main-heading {
   align-content: space-around;
-  padding-top: 10rem;
+  padding-top: 3rem;
   padding-bottom: 10rem;
-
 
   background-size: cover;
   text-align: center;
 
 }
 
-
 .main-heading-big {
+  padding: 0;
   margin: 0;
-  font-size: 5rem;
+  font-size: 7rem;
   text-transform: uppercase;
-  font-family: 'Bungee Shade', cursive;
+  color: $c-white;
+
 }
 
 .main-heading-small {
   margin: 0;
-  color: $c-black;
-  font-size: 1rem;
-  font-family: 'Bungee Inline', cursive;
+  color: $c-white;
+  font-size: 2rem;
 }

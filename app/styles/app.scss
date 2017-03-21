@@ -7,6 +7,8 @@
 @import 'css-resets';
 @import 'double-container';
 @import 'top-nav';
+@import 'middle';
+@import 'bottom';
 
 // TOP SECTION;
 
@@ -58,13 +60,16 @@
 
 // <-- FOOTER -->
 //
+//
+
+
 
 .footer {
 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: blue;
+  background: #05726C;
   color: $c-white;
   font-size: 0.8rem;
 
