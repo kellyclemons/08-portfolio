@@ -1,21 +1,11 @@
 // @import 'yoga';
 // @import 'normalize';
-
+//
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+@import 'font-awesome';
 @import 'box-sizing';
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-img {
-  align-self: center;
-  max-width: 100%;
-}
-
-ul {
-  padding-left: 0;
-  list-style: none;
-}
+@import 'css-resets';
+@import 'double-container';
+@import 'top-nav';
+@import 'middle';
+@import 'bottom';
